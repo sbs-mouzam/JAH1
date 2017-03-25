@@ -28,6 +28,7 @@ namespace DataAccessLayer.DataModel
         }
 
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
+
         public int Id { get; set; }
 
         [StringLength(100)]

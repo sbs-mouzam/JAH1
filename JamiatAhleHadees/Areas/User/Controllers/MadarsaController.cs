@@ -29,7 +29,7 @@ namespace JamiatAhleHadees.Areas.User.Controllers
             if (id != null)
             {
 
-                //_MadarsaModel.UserList = _MadarsaBs.UserList().ToList();
+                
 
                 var _MadarsaModel = _MadarsaBs.GetById(Convert.ToInt32(id));
                 ViewBag.HeadUserId = new SelectList(_MadarsaBs.UserList().ToList(), "Id", "Name");
@@ -42,6 +42,8 @@ namespace JamiatAhleHadees.Areas.User.Controllers
                 ViewBag.HeadUserId = new SelectList(_MadarsaBs.UserList().ToList(), "Id", "Name");
                 ViewBag.ZoneId = new SelectList(_MadarsaBs.ZoneList().ToList(), "Id", "Name");
                 _MadarsaModel.MadarsaList = _MadarsaBs.MadarsaList().ToList();
+              
+                
 
                 return View(_MadarsaModel);
 

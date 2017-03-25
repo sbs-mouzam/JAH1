@@ -5,10 +5,13 @@ namespace DataAccessLayer.DataModel
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using CommonLayer.CommonModels;
 
     [Table("NewMadarsaOperationsRequest")]
     public partial class NewMadarsaOperationsRequest
     {
+        private NewMadarsaOperationsRequestModel model;
+
         public int Id { get; set; }
 
         [StringLength(100)]
@@ -82,6 +85,8 @@ namespace DataAccessLayer.DataModel
 
         public bool? Status { get; set; }
 
+        public int? CreatedBy { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime? CreatedDate { get; set; }
 
@@ -95,4 +100,6 @@ namespace DataAccessLayer.DataModel
 
         public virtual User User { get; set; }
     }
+       
+    
 }

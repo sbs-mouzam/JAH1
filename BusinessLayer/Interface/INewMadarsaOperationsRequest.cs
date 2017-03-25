@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Interface
 {
-   public interface INewMadarsaOperationsRequest
+    public interface INewMadarsaOperationsRequest
     {
-       List<NewMadarsaOperationsRequestModel> NewMadarsaOperationRequestLists ();
+        List<NewMadarsaOperationsRequestModel> NewMadarsaOperationRequestList();
 
-       List<MadarsaModel> MadarsaLists ();
+        List<MadarsaModel> MadarsaList();
 
-        List<RequestSubmitModel> RequestSubmitLists ();
+        List<RequestSubmitModel> RequestSubmitList();
 
-        List<RequestTypeModel> RequestTypeLists ();
+        List<RequestTypeModel> RequestTypeList();
 
-        List<UserModel> UserLists ();
+        List<UserModel> UserList();
 
         NewMadarsaOperationsRequestModel GetDetails(NewMadarsaOperationsRequestModel model);
 

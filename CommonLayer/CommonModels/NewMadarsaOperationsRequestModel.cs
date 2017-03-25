@@ -81,23 +81,24 @@ namespace CommonLayer.CommonModels
 
         public bool? Status { get; set; }
 
-
+        public int? CreatedBy { get; set; }
         public DateTime? CreatedDate { get; set; }
 
         public int? RequestTypeId { get; set; }
 
         public string UserName { get; set; }
         public string MadarsaName { get; set; }
-        public string MyProperty { get; set; }
+        public string RequestTypeName { get; set; }
 
-        public List<NewMadarsaOperationsRequestModel> NewMadarsaOperationRequestLists { get; set; }
+        public List<NewMadarsaOperationsRequestModel> NewMadarsaOperationRequestModelList { get; set; }
 
-        public List<MadarsaModel> MadarsaLists { get; set; }
+        public List<MadarsaModel> MadarsaModelList { get; set; }
 
-        public List<RequestSubmitModel> RequestSubmitLists { get; set; }
+        public List<RequestSubmitModel> RequestSubmitModelList { get; set; }
 
-        public List<RequestTypeModel> RequestTypeLists { get; set; }
+        public List<RequestTypeModel> RequestTypeModelList { get; set; }
 
-        public List<UserModel> UserLists { get; set; }
+        public List<UserModel> UserModelList { get; set; }
+       
     }
 }

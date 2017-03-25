@@ -109,6 +109,8 @@
     <Content Include="Areas\User\Views\Masjid\Create.cshtml" />
     <Content Include="Areas\User\Views\Madarsa\Create.cshtml" />
     <Content Include="Areas\User\Views\Madarsa\Index.cshtml" />
+    <Content Include="Areas\User\Views\NewMadarsaOperationRequest\Index.cshtml" />
+    <Content Include="Areas\User\Views\NewMadarsaOperationRequest\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -124,6 +126,7 @@
     <Compile Include="Areas\User\Controllers\HalqaController.cs" />
     <Compile Include="Areas\User\Controllers\MadarsaController.cs" />
     <Compile Include="Areas\User\Controllers\MasjidController.cs" />
+    <Compile Include="Areas\User\Controllers\NewMadarsaOperationRequestController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

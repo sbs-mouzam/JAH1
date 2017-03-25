@@ -130,7 +130,8 @@ namespace BusinessLogic.Implementation
             Madarsa _tblMadarsa = new Madarsa(model);
             if (model.Id != null && model.Id != 0)
             {
-
+                _tblMadarsa.CreatedDate = System.DateTime.Now;
+                _tblMadarsa.CreatedBy = 1;
                 _tbl_Madarsa.Update(_tblMadarsa);
 
             }
