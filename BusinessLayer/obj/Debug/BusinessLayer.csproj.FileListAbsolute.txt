@@ -42,3 +42,15 @@ E:\JAH\BusinessLayer\bin\Debug\EntityFramework.xml
 E:\JAH\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 E:\JAH\BusinessLayer\obj\Debug\BusinessLayer.dll
 E:\JAH\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\CommonLayer.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\CommonLayer.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\YOUSUF-PC\Documents\GitHub\JAH1\BusinessLayer\bin\Debug\EntityFramework.xml

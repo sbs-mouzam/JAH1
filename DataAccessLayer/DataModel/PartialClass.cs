@@ -11,6 +11,23 @@ namespace DataAccessLayer.DataModel
     {
     }
 
+    public partial class Madarsa
+
+    {
+        public Madarsa(MadarsaModel item)
+        {
+            Id = item.Id;
+            Name = item.Name;
+            Location = item.Location;
+            Mobile = item.Mobile;
+            HeadUserId = item.HeadUserId;
+            ZoneId = item.ZoneId;
+           CreatedDate = item.CreatedDate;
+            CreatedBy = item.CreatedBy;
+        }
+
+       
+    }
 
     public partial class Halqa
     {
