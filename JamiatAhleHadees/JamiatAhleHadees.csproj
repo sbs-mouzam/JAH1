@@ -111,6 +111,8 @@
     <Content Include="Areas\User\Views\Madarsa\Index.cshtml" />
     <Content Include="Areas\User\Views\NewMadarsaOperationRequest\Index.cshtml" />
     <Content Include="Areas\User\Views\NewMadarsaOperationRequest\Create.cshtml" />
+    <Content Include="Areas\User\Views\ExistingMadarsaOperationsRequest\Index.cshtml" />
+    <Content Include="Areas\User\Views\ExistingMadarsaOperationsRequest\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -123,6 +125,7 @@
     <Compile Include="Areas\BoardMember\BoardMemberAreaRegistration.cs" />
     <Compile Include="Areas\BoardMember\Controllers\RequestListController.cs" />
     <Compile Include="Areas\PanelMember\PanelMemberAreaRegistration.cs" />
+    <Compile Include="Areas\User\Controllers\ExistingMadarsaOperationsRequestController.cs" />
     <Compile Include="Areas\User\Controllers\HalqaController.cs" />
     <Compile Include="Areas\User\Controllers\MadarsaController.cs" />
     <Compile Include="Areas\User\Controllers\MasjidController.cs" />

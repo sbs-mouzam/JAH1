@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementation\ExistingMadarsaOperationsRequestBs.cs" />
     <Compile Include="Implementation\HalqaBs.cs" />
     <Compile Include="Implementation\MadarsaBs.cs" />
     <Compile Include="Implementation\MasjidBs.cs" />
     <Compile Include="Implementation\MasjidConstructionRequestBs.cs" />
     <Compile Include="Implementation\NewMadarsaOperationsRequestBs.cs" />
     <Compile Include="Implementation\RequestSubmitBs.cs" />
+    <Compile Include="Interface\IExistingMadarsaOperationsRequest.cs" />
     <Compile Include="Interface\IHalqa.cs" />
     <Compile Include="Interface\IMadarsa.cs" />
     <Compile Include="Interface\IMasjid.cs" />

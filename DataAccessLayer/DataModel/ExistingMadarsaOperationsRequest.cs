@@ -82,13 +82,17 @@ namespace DataAccessLayer.DataModel
         [Column(TypeName = "date")]
         public DateTime? CreatedDate { get; set; }
 
-        public int? RequestType { get; set; }
+        public int? RequestTypeId { get; set; }
+
+        public int? CreatedBy { get; set; }
+
+        public int? ExpectedStudents { get; set; }
 
         public virtual Madarsa Madarsa { get; set; }
 
         public virtual RequestSubmit RequestSubmit { get; set; }
 
-        public virtual RequestType RequestType1 { get; set; }
+        public virtual RequestType RequestType { get; set; }
 
         public virtual User User { get; set; }
     }

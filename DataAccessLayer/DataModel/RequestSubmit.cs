@@ -27,8 +27,6 @@ namespace DataAccessLayer.DataModel
             RequestLikes = new HashSet<RequestLike>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-
         public int Id { get; set; }
 
         [StringLength(100)]

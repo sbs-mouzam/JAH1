@@ -17,7 +17,6 @@ namespace DataAccessLayer.DataModel
             Madarsas = new HashSet<Madarsa>();
             MadarsaExtensionRequests = new HashSet<MadarsaExtensionRequest>();
             MadarsaLandRequests = new HashSet<MadarsaLandRequest>();
-            Masjids = new HashSet<Masjid>();
             MasjidConstructionRequests = new HashSet<MasjidConstructionRequest>();
             MasjidExtensionRequests = new HashSet<MasjidExtensionRequest>();
             MasjidLandRequests = new HashSet<MasjidLandRequest>();
@@ -71,9 +70,6 @@ namespace DataAccessLayer.DataModel
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MadarsaLandRequest> MadarsaLandRequests { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Masjid> Masjids { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MasjidConstructionRequest> MasjidConstructionRequests { get; set; }

@@ -634,11 +634,6 @@ namespace DataAccessLayer.DataModel
                 .Property(e => e.Name)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<RequestType>()
-                .HasMany(e => e.ExistingMadarsaOperationsRequests)
-                .WithOptional(e => e.RequestType1)
-                .HasForeignKey(e => e.RequestType);
-
             modelBuilder.Entity<Role>()
                 .Property(e => e.Name)
                 .IsUnicode(false);
@@ -673,11 +668,6 @@ namespace DataAccessLayer.DataModel
 
             modelBuilder.Entity<User>()
                 .HasMany(e => e.Madarsas)
-                .WithOptional(e => e.User)
-                .HasForeignKey(e => e.HeadUserId);
-
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.Masjids)
                 .WithOptional(e => e.User)
                 .HasForeignKey(e => e.HeadUserId);
 

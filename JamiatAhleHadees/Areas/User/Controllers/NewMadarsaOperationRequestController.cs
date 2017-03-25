@@ -11,12 +11,12 @@ namespace JamiatAhleHadees.Areas.User.Controllers
 {
     public class NewMadarsaOperationRequestController : Controller
     {
-        private NewMadarsaOperationsRequestModel _NewMadarsaOperationsRequestModel;
+        private NewMadarsaOperationsRequestModel _NewMadarsaModel;
         private readonly INewMadarsaOperationsRequest _NewMadarsaOperationsRequestModelBs;
 
         public NewMadarsaOperationRequestController()
         {
-            _NewMadarsaOperationsRequestModel = new NewMadarsaOperationsRequestModel();
+            _NewMadarsaModel = new NewMadarsaOperationsRequestModel();
             _NewMadarsaOperationsRequestModelBs = new NewMadarsaOperationsRequestBs();
         }
 
@@ -33,11 +33,11 @@ namespace JamiatAhleHadees.Areas.User.Controllers
 
 
 
-                var varData = _NewMadarsaOperationsRequestModelBs.GetById(Convert.ToInt32(id));
+                var _NewMadarsaOperationsRequestModel = _NewMadarsaOperationsRequestModelBs.GetById(Convert.ToInt32(id));
                 ViewBag.HeadUserId = new SelectList(_NewMadarsaOperationsRequestModelBs.UserList().ToList(), "Id", "Name");
                 ViewBag.MadarsaId = new SelectList(_NewMadarsaOperationsRequestModelBs.MadarsaList().ToList(), "Id", "Name");
                 ViewBag.RequestTypeId = new MultiSelectList(_NewMadarsaOperationsRequestModelBs.RequestTypeList().ToList(), "Id", "Name");
-                return View(varData);
+                return View(_NewMadarsaOperationsRequestModel);
 
             }
             else
@@ -45,11 +45,11 @@ namespace JamiatAhleHadees.Areas.User.Controllers
                 ViewBag.HeadUserId = new SelectList(_NewMadarsaOperationsRequestModelBs.UserList().ToList(), "Id", "Name");
                 ViewBag.MadarsaId = new SelectList(_NewMadarsaOperationsRequestModelBs.MadarsaList().ToList(), "Id", "Name");
                 ViewBag.RequestTypeId = new MultiSelectList(_NewMadarsaOperationsRequestModelBs.RequestTypeList().ToList(), "Id", "Name");
-                _NewMadarsaOperationsRequestModel.NewMadarsaOperationRequestModelList = _NewMadarsaOperationsRequestModelBs.NewMadarsaOperationRequestList().ToList();
+                _NewMadarsaModel.NewMadarsaOperationRequestModelList = _NewMadarsaOperationsRequestModelBs.NewMadarsaOperationRequestList().ToList();
 
 
 
-                return View(_NewMadarsaOperationsRequestModel);
+                return View(_NewMadarsaModel);
 
             }
 

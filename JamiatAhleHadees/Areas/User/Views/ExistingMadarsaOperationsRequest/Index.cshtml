@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CommonLayer.CommonModels.NewMadarsaOperationsRequestModel>
+﻿@model IEnumerable<CommonLayer.CommonModels.ExistingMadarsaOperationsRequestModel>
 
 @{
     ViewBag.Title = "Index";
@@ -33,7 +33,7 @@
                 <td><b>Edit</b></td>
                 <td><b>Details</b></td>
                 <td><b>Delete</b></td>
-              
+
             </tr>
         </thead>
         <tbody>
@@ -53,21 +53,21 @@
                     <td>
                         <button value="Edit"
                                 class="btn btn-primary btn-sm" type="button" id="addressSearch"
-                                onclick="location.href='@Url.Action("Create", "NewMadarsaOperationRequest" ,new {id = item.Id })'">
+                                onclick="location.href='@Url.Action("Create", "ExistingMadarsaOperationRequest" ,new {id = item.Id })'">
                             Edit
                         </button>
                     </td>
                     <td>
                         <button value="Details"
                                 class="btn btn-info btn-sm" type="button" id="addressSearch"
-                                onclick="location.href='@Url.Action("Details", "NewMadarsaOperationRequest" ,new {id = item.Id })'">
+                                onclick="location.href='@Url.Action("Details", "ExistingMadarsaOperationRequest" ,new {id = item.Id })'">
                             Details
                         </button>
                     </td>
                     <td>
                         <button value="Delete"
                                 class="btn btn-danger btn-sm" type="button" id="addressSearch"
-                                onclick="location.href='@Url.Action("Delete", "NewMadarsaOperationRequest" ,new {id = item.Id })'">
+                                onclick="location.href='@Url.Action("Delete", "ExistingMadarsaOperationRequest" ,new {id = item.Id })'">
                             Delete
                         </button>
                     </td>

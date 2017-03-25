@@ -9,10 +9,6 @@ namespace DataAccessLayer.DataModel
     [Table("Halqa")]
     public partial class Halqa
     {
-        public Halqa()
-        {
-
-        }
         public int Id { get; set; }
 
         [StringLength(50)]
