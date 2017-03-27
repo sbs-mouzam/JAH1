@@ -114,6 +114,7 @@
     <Content Include="Areas\User\Views\ExistingMadarsaOperationsRequest\Index.cshtml" />
     <Content Include="Areas\User\Views\ExistingMadarsaOperationsRequest\Create.cshtml" />
     <Content Include="Areas\User\Views\MadarsaExtenstionRequest\Index.cshtml" />
+    <Content Include="Areas\User\Views\MadarsaExtenstionRequest\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
