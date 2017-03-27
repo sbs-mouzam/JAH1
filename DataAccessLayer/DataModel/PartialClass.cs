@@ -10,6 +10,45 @@ namespace DataAccessLayer.DataModel
     class PartialClass
     {
     }
+    public partial class MadarsaLandRequest
+    {
+        public MadarsaLandRequest()
+        {
+
+        }
+        public MadarsaLandRequest(MadarsaLandRequestModel item)
+        {
+            Id = item.Id;
+            ShortDescription = item.ShortDescription;
+            Location = item.Location;
+            Area = item.Area;
+            TimePeriod = item.TimePeriod;
+            AmountPaid = item.AmountPaid;
+            AmountNeeded = item.AmountNeeded;
+            LandArea = item.LandArea;
+            LandPrice = item.LandPrice;
+            PurchasingFrom = item.PurchasingFrom;
+
+            Doc1 = item.Doc1;
+            Doc2 = item.Doc2;
+            Doc3 = item.Doc3;
+            Pic1 = item.Pic1;
+            Pic2 = item.Pic2;
+            Pic3 = item.Pic3;
+            Status = item.Status;
+            CreatedDate = item.CreatedDate;
+            CreatedBy = item.CreatedBy;
+
+            UserId = item.UserId;
+
+            MadarsaId = item.MadarsaId;
+
+            RequestTypeId = item.RequestTypeId;
+
+            RequestSubmitId = item.RequestSubmitId;
+            //  RequestSubmitId
+
+        }
     public partial class MadarsaExtensionRequest
     {
         public MadarsaExtensionRequest()

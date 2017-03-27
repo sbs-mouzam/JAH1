@@ -73,5 +73,6 @@ namespace DataAccessLayer.DataModel
         public virtual RequestType RequestType { get; set; }
 
         public virtual User User { get; set; }
+        public int CreatedBy { get; set; }
     }
 }

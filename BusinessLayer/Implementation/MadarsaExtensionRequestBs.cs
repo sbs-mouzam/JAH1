@@ -124,6 +124,25 @@ namespace BusinessLayer.Implementation
             return model;
         }
 
+        public int Save(MadarsaExtensionRequestModel model)
+        {
+            MadarsaExtensionRequest _tblList = new MadarsaExtensionRequest(model);
+            if (_tblList.Id != null && _tblList.Id != 0)
+            {
+                _tblList.CreatedDate = System.DateTime.Now;
+                _tblList.CreatedBy = 1;
+                tbl_MadarsaExtensionRequest.Update(_tblList);
+            }
+            else
+            {
+                _tblList.CreatedDate = System.DateTime.Now;
+                _tblList.CreatedBy = 1;
+                _tblList = tbl_MadarsaExtensionRequest.Insert(_tblList);
+            }
+
+
+            return _tblList.Id;
+        }
         public List<MadarsaModel> MadarsaList()
         {
             GenericPattern<Madarsa> _tblList = new GenericPattern<Madarsa>();
@@ -170,25 +189,6 @@ namespace BusinessLayer.Implementation
             return _ModelList;
         }
 
-        public int Save(MadarsaExtensionRequestModel model)
-        {
-            MadarsaExtensionRequest _tblList = new MadarsaExtensionRequest(model);
-            if (_tblList.Id != null && _tblList.Id != 0)
-            {
-                _tblList.CreatedDate = System.DateTime.Now;
-                _tblList.CreatedBy = 1;
-                tbl_MadarsaExtensionRequest.Update(_tblList);
-            }
-            else
-            {
-                _tblList.CreatedDate = System.DateTime.Now;
-                _tblList.CreatedBy = 1;
-                _tblList = tbl_MadarsaExtensionRequest.Insert(_tblList);
-            }
-
-
-            return _tblList.Id;
-        }
 
         public List<UserModel> UserList()
         {
